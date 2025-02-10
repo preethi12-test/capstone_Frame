@@ -1,5 +1,4 @@
 {
-    "name": "@capillary-test-automation/healthcare-frontend-web",
     "private": true,
     "dependencies": {
         "@axe-core/playwright": "^4.10.1",
