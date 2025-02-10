@@ -1,0 +1,27 @@
+{
+    "extends": "../../../tsconfig.base.json",
+    "compilerOptions": {
+        "baseUrl": "./",
+        "outDir": "../../../dist/out-tsc",
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitOverride": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "declaration": true,
+        "types": ["node"],
+        "paths": {
+            "@pages/*": ["src/pages/*"],
+            "@utils/*": ["src/utils/*"],
+            "shared-lib": ["../../shared-lib/src/index.ts"]
+        }
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules"],
+    "references": [
+        {
+            "path": "../../shared-lib"
+        }
+    ]
+}

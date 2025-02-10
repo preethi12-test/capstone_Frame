@@ -1,0 +1,28 @@
+{
+    "name": "@capillary-test-automation/healthcare-frontend-web",
+    "private": true,
+    "dependencies": {
+        "@axe-core/playwright": "^4.10.1",
+        "@playwright/test": "^1.49.1",
+        "axe-html-reporter": "^2.2.11"
+    },
+    "nx": {
+        "sourceRoot": "packages/frontend/web/src",
+        "projectType": "library",
+        "name": "healthcare-frontend-web",
+        "targets": {
+            "smoke": {
+                "command": "nx e2e healthcare-frontend-web -- --grep=@smoke"
+            },
+            "smoke-chrome": {
+                "command": "nx e2e healthcare-frontend-web -- --grep=@smoke --project=chromium"
+            },
+            "smoke-firefox": {
+                "command": "nx e2e healthcare-frontend-web -- --grep=@smoke --project=firefox"
+            },
+            "smoke-webkit": {
+                "command": "nx e2e healthcare-frontend-web -- --grep=@smoke --project=safari"
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "strict": true,
+        "sourceMap": true,
+        "composite": true,
+        "declaration": true,
+        "declarationMap": true,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "importHelpers": true,
+        "target": "ESNext",
+        "module": "ESNext",
+        "lib": ["ES2022", "dom"],
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "types": ["node"],
+        "paths": {
+            "shared-lib": ["packages/shared-lib/src/index.ts"]
+        },
+        "incremental": true
+    },
+    "exclude": ["node_modules", "dist"]
+}
